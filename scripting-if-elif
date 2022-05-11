@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo "What is your name?"
+read -r NAME
+
+echo "Your name is ${NAME}"
+
+echo -n "How much do you make a year?"
+read -r S
+
+if 
+
+	[ "${S}" -lt 10000 ] || [ "${S}" -eq 10000 ]
+
+	then 
+		echo "You need to get a life ${NAME}. You are a certified bum!"
+
+		elif
+			[ "${S} -gt 10000 ] && [ "${S} -lt 50000 ]
+			then
+			echo "Nice ${NAME} but I think you can do better."
+			exit 1
+		elif
+			[ "${S}" -eq 50000 ]
+			then echo "Congrats you made it to middle class"
+			exit 2
+		elif
+			[ "${S}" -gt 50000 ]
+			then
+			echo "You the man ${NAME}!"
+			exit 3
+fi
+
